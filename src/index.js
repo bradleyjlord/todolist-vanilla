@@ -9,7 +9,8 @@ function addTodo() {
     localStorage.setItem("todos", JSON.stringify(todos));
     input.value = "";
     loadTodos();
-}function loadTodos() {
+}
+function loadTodos() {
     let list = document.getElementById("todo-list");
     list.innerHTML = "";
     let todos = JSON.parse(localStorage.getItem("todos")) || [];
