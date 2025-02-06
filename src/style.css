@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: url(../public/background.png);
+  background-size: cover;
+  overflow: hidden;
+}
+#header-img {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+#input-container {
+  width: 90%;
+  max-width: 400px;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+#todo-container {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: calc(50vh - 120px);
+}
+input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #725bf1;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+.actions button {
+  margin-left: 5px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.edit-btn { background: #ffc107; }
+.delete-btn { background: #dc3545; color: white; margin-top: 4px; }
+.clear-btn { background: #d700ebf1; color: white; margin-top: 4px; }
+#links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#links button {
+  width: 200px;
+  padding: 10px;
+  background: #725bf1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#links button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+#links button:hover {
+  background: #0056b3;
+}
