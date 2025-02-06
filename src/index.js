@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", loadTodos);
-
 function addTodo() {
     let input = document.getElementById("todo-input");
     let task = input.value.trim();
